@@ -7,7 +7,6 @@ public class Stats {
         
         if (args.length == 0) {
 			System.out.println("System.err");
-			return;
 			}
 			
         for (String arg : args) {
