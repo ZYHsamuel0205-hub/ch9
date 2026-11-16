@@ -1,4 +1,3 @@
-import java.util.Arrays;
 public class Stats {
     public static void main(String[] args) {
         int max = Integer.MIN_VALUE; //smallest possible int
@@ -8,6 +7,7 @@ public class Stats {
         
         if (args.length == 0) {
 			System.out.println("System.err");
+			return;
 			}
 			
         for (String arg : args) {
