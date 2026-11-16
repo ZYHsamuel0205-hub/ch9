@@ -5,6 +5,11 @@ public class Stats {
         int min = Integer.MAX_VALUE;
         int sum = 0;
         int count = args.length;
+        
+        if (args.length == 0) {
+			System.out.println("System.err");
+			}
+			
         for (String arg : args) {
             int value = Integer.parseInt(arg);
             if (value > max) {
@@ -15,11 +20,11 @@ public class Stats {
             }
             sum += value;
         }
-        int avg = sum / count; 
+        double avg = sum / count; 
         System.out.println("The count is " + count);
         System.out.println("The sum is " + sum);
         System.out.println("The min is " + min);
         System.out.println("The max is " + max);
-        System.out.println("The average is " + avg);
+        System.out.printf("The average is %.2f%n", avg);
     }
 }
